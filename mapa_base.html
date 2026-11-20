@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3710e5b1903242323c8b07cc89f83fca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3710e5b1903242323c8b07cc89f83fca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3710e5b1903242323c8b07cc89f83fca = L.map(
+                "map_3710e5b1903242323c8b07cc89f83fca",
+                {
+                    center: [56.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_3710e5b1903242323c8b07cc89f83fca);
+
+            
+
+        
+    
+            var tile_layer_7d0285e8d3548eeef521620447220541 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap contributors\u003c/a\u003e | Datos bajo licencia \u003ca href=\"https://opendatacommons.org/licenses/odbl/\"\u003eODbL\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "referrerPolicy": "strict-origin",
+}
+
+            );
+        
+    
+            tile_layer_7d0285e8d3548eeef521620447220541.addTo(map_3710e5b1903242323c8b07cc89f83fca);
+        
+    
+            var marker_e011c5af392dd76f816d7b2d9ce61eeb = L.marker(
+                [60.20556, 24.65556],
+                {
+}
+            ).addTo(map_3710e5b1903242323c8b07cc89f83fca);
+        
+    
+            var icon_89288a9a70ca482f1c07712272dfe306 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_664d81d0efe7c59b121443a37ddb3579 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ab7eb9e7c8ed0db2af6faeb0fa13ff2 = $(`<div id="html_1ab7eb9e7c8ed0db2af6faeb0fa13ff2" style="width: 100.0%; height: 100.0%;">     <div style="text-align:center; margin-bottom:15px;">          <h2>Kimi Raikkonen</h2>          <p><b>Escudería:</b> Ferrari</p>          <img src="https://www.team-bhp.com/sites/default/files/styles/check_extra_large_for_review/public/Kimi.jpg"              width="120"              height="120"              style="object-fit:cover; border-radius:50%;">          <p><b>Puntaje total:</b> 186</p>      </div>     </div>`)[0];
+                popup_664d81d0efe7c59b121443a37ddb3579.setContent(html_1ab7eb9e7c8ed0db2af6faeb0fa13ff2);
+            
+        
+
+        marker_e011c5af392dd76f816d7b2d9ce61eeb.bindPopup(popup_664d81d0efe7c59b121443a37ddb3579)
+        ;
+
+        
+    
+    
+                marker_e011c5af392dd76f816d7b2d9ce61eeb.setIcon(icon_89288a9a70ca482f1c07712272dfe306);
+            
+    
+            var marker_b5d3d0ca7712910dc7b3dcf5ce572a7a = L.marker(
+                [51.835, 6.24528],
+                {
+}
+            ).addTo(map_3710e5b1903242323c8b07cc89f83fca);
+        
+    
+            var icon_9d4ad49171575028556b11d7eb921659 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c95fc3396708116a05d64ad8b1455223 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fcb39a6531501cf15b1e25a1647ef2a = $(`<div id="html_7fcb39a6531501cf15b1e25a1647ef2a" style="width: 100.0%; height: 100.0%;">     <div style="text-align:center; margin-bottom:15px;">          <h2>Nico Hulkenberg</h2>          <p><b>Escudería:</b> Force India Mercedes</p>          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Nico_Hulkenberg_2016_Malaysia.jpg"              width="120"              height="120"              style="object-fit:cover; border-radius:50%;">          <p><b>Puntaje total:</b> 72</p>      </div>     </div>`)[0];
+                popup_c95fc3396708116a05d64ad8b1455223.setContent(html_7fcb39a6531501cf15b1e25a1647ef2a);
+            
+        
+
+        marker_b5d3d0ca7712910dc7b3dcf5ce572a7a.bindPopup(popup_c95fc3396708116a05d64ad8b1455223)
+        ;
+
+        
+    
+    
+                marker_b5d3d0ca7712910dc7b3dcf5ce572a7a.setIcon(icon_9d4ad49171575028556b11d7eb921659);
+            
+    
+            var poly_line_92008573650ead2a90adfc2f959ce0f6 = L.polyline(
+                [[60.20556, 24.65556], [51.835, 6.24528]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3710e5b1903242323c8b07cc89f83fca);
+        
+</script>
+</html>
